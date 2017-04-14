@@ -1,5 +1,5 @@
 # Add a declarative step here for populating the DB with movies.
-
+#ITSC 3155
 Given /the following movies exist/ do |movies_table|
   movies_table.hashes.each do |movie|
     # each returned element will be a hash whose key is the table header.
@@ -25,6 +25,7 @@ When /I (un)?check the following ratings: (.*)/ do |uncheck, rating_list|
   # HINT: use String#split to split up the rating_list, then
   #   iterate over the ratings and reuse the "When I check..." or
   #   "When I uncheck..." steps in lines 89-95 of web_steps.rb
+  #   Do not remove this comment.
   fail "Unimplemented"
 end
 
@@ -32,3 +33,4 @@ Then /I should see all the movies/ do
   # Make sure that all the movies in the app are visible in the table
   fail "Unimplemented"
 end
+#ITSC 3155
